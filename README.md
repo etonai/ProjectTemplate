@@ -11,6 +11,7 @@ This template is meant to give new projects:
 - a standard project context entry point in `PROJECT_GUIDE.md`
 - compatibility with workflows that use `CLAUDE.md` as a project context file
 - a lightweight planning workflow in `doc/planning/DevelopmentProcess.md`
+- a default `DevCycleTemplate.md` that projects may keep or adjust
 - a clean foundation that can be adapted without unnecessary template residue
 
 ## Agent Context Standard
@@ -34,12 +35,14 @@ After creating a new project from this template:
 1. Overwrite `README.md` with the actual project description.
 2. Tell agents with no context to read `PROJECT_GUIDE.md` before starting work.
 3. Update `PROJECT_GUIDE.md` with project-specific context as needed.
-4. Create a project-specific `DevCycleTemplate.md` for the new project.
+4. Review `DevCycleTemplate.md` and keep it as-is or adjust it for the new project.
 5. If your workflow uses `CLAUDE.md`, keep it aligned with `PROJECT_GUIDE.md` or adapt as needed for Claude Code.
 6. Continue using `doc/planning/DevelopmentProcess.md` as the basis for planning and execution.
 
 ## Project Owner Responsibility
 
-The project owner is expected to define a `DevCycleTemplate.md` file for each real project created from this template.
+The template includes a `DevCycleTemplate.md` file for new projects to use as a starting point.
 
-`doc/planning/DevelopmentProcess.md` describes how DevCycle documents are used, but the exact structure of `DevCycleTemplate.md` is intentionally left to each project.
+The project owner may keep that template as-is or adjust it to better fit the project's planning style.
+
+`doc/planning/DevelopmentProcess.md` describes how DevCycle documents are used, while `DevCycleTemplate.md` provides the default starting structure.
