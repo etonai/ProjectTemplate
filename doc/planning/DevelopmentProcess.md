@@ -19,7 +19,6 @@ Each DevCycle has:
 - a clear goal
 - a defined set of tasks
 - an end-of-cycle review of what was completed
-- a handoff into the next DevCycle after completion
 
 ## Planning Structure
 
@@ -70,6 +69,15 @@ Each DevCycle follows this lifecycle:
 7. Move the completed DevCycle document into `doc/planning/completed/`.
 8. Create the next DevCycle document for the next set of goals and tasks.
 
+## Status Values
+
+DevCycle documents and individual phases use these status values:
+
+- **Planning** — work is defined but not yet started
+- **In Progress** — work is actively underway
+- **Work Complete** — implementation is done, pending verification
+- **Verified** — work is confirmed correct and the phase or cycle is closed
+
 ## DevCycle Document Expectations
 
 Each DevCycle document should include:
@@ -82,11 +90,11 @@ Each DevCycle document should include:
 
 Suggested sections:
 
-- `DevCycle`
 - `Goal`
-- `Outcome`
+- `Desired Outcome`
 - `Tasks`
-- `Notes`
+- `Notes and Risks`
+- `Completion Summary`
 
 ## Task Guidelines
 
