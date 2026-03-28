@@ -34,5 +34,12 @@ After creating a new project from this template:
 1. Overwrite `README.md` with the actual project description.
 2. Tell agents with no context to read `PROJECT_GUIDE.md` before starting work.
 3. Update `PROJECT_GUIDE.md` with project-specific context as needed.
-4. If your workflow uses `CLAUDE.md`, keep it aligned with `PROJECT_GUIDE.md` or adapt as needed for Claude Code.
-5. Continue using `doc/planning/DevelopmentProcess.md` as the basis for planning and execution.
+4. Create a project-specific `DevCycleTemplate.md` for the new project.
+5. If your workflow uses `CLAUDE.md`, keep it aligned with `PROJECT_GUIDE.md` or adapt as needed for Claude Code.
+6. Continue using `doc/planning/DevelopmentProcess.md` as the basis for planning and execution.
+
+## Project Owner Responsibility
+
+The project owner is expected to define a `DevCycleTemplate.md` file for each real project created from this template.
+
+`doc/planning/DevelopmentProcess.md` describes how DevCycle documents are used, but the exact structure of `DevCycleTemplate.md` is intentionally left to each project.
