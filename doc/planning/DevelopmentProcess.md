@@ -78,6 +78,18 @@ DevCycle documents and individual phases use these status values:
 - **Work Complete** — implementation is done, pending verification
 - **Verified** — work is confirmed correct and the phase or cycle is closed
 
+`Verified` is a permission-gated status. Agents may not set a DevCycle or phase to `Verified` without explicit user permission.
+
+## Verification Authority
+
+Agents are not allowed to mark a DevCycle or phase as `Verified` without explicit user permission.
+
+Until that permission is given:
+
+- agents should stop at `Work Complete` when implementation is done and verification is pending user approval
+- agents may report that work appears complete or tested, but they must not change the recorded status to `Verified`
+- the user is the authority for deciding when `Verified` is appropriate
+
 ## DevCycle Document Expectations
 
 Each DevCycle document should include:
@@ -124,6 +136,8 @@ When a DevCycle closes:
 - record any important notes in the DevCycle document
 - move the DevCycle document to `doc/planning/completed/`
 - start the next DevCycle document in `doc/planning/`
+
+A DevCycle or phase should not be marked `Verified` during closure unless the user has explicitly approved that status.
 
 ## Working Agreement
 
